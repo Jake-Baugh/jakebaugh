@@ -1,0 +1,231 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- CSS Dependencies -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/shards.min.css?version=2.1.0">
+  <link rel="stylesheet" href="css/shards-extras.min.css?version=2.1.0">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="https://js.stripe.com/v3/"></script>
+</head>
+
+<body>
+  <!-- Welcome Section -->
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-light bg-light fixed-top px-0">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo-alt.png" class="mr-2" alt="JB Consulting">
+
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- / Navigation -->
+
+  <div class="book main section mt-5 py-4" id="book">
+      <!-- Calendly inline widget begin -->
+      <h3 class="section-title text-center m-5">Get your slot
+      </h3>
+      <div class="container py-4">
+        <div class="row">
+          <div class="calendly-inline-widget" data-url="https://calendly.com/jake-baugh/call-with-jake" style="width:100%; min-height:600px"></div>
+          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+          <!-- Calendly inline widget end -->
+        </div>
+      </div>
+    </div> 
+  <div class="clients section mx-auto py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-md-2 text-center my-4">
+          <img class="client-img my-4" src="images/rollsroyce-logo.png" />
+        </div>
+        <div class="col-6 col-md-2 text-center my-4">
+          <img class="client-img my-3" src="images/uwe-logo.png" />
+        </div>
+        <div class="col-6 col-md-2 text-center my-4">
+          <img class="client-img my-3" src="images/visionary-logo.png" />
+        </div>
+        <div class="col-6 col-md-2 text-center my-4">
+          <img class="client-img my-4" src="images/cwa-logo.png" />
+        </div>
+        <div class="col-6 col-md-2 text-center my-4">
+          <img class="client-img my-3" src="images/elemental-logo.svg" />
+        </div>
+        <div class="col-6 col-md-2 text-center my-4">
+          <img class="client-img my-4" src="images/medilogik-logo.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonials Section -->
+  <div id="testimonials" class="testimonials section section-invert py-4">
+    <h3 class="section-title text-center m-5">Testimonials</h3>
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-4 testimonial text-center">
+          <div class="avatar rounded-circle with-shadows mb-3 ml-auto mr-auto">
+            <img src="images/common/avatar-1.jpeg" class="w-100" alt="Testimonial Avatar" />
+          </div>
+          <h5 class="mb-1">Jordan Carter</h5>
+          <span class="text-muted d-block mb-2">Entrepreneur</span>
+          <p>Somehow this guy can spend like 30 minutes tweaking my landing pages and end up boosting conversion rates
+            by around 12% wtf??!!
+          </p>
+
+          <div class="icon text-primary text-center mb-5">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+        </div>
+
+        <div class="col-md-4 testimonial text-center">
+          <div class="avatar rounded-circle with-shadows mb-3 ml-auto mr-auto">
+            <img src="images/common/avatar-2.jpeg" class="w-100" alt="Testimonial Avatar" />
+          </div>
+          <h5 class="mb-1">Chris Marsom</h5>
+          <span class="text-muted d-block mb-2">Marketing Manager</span>
+          <p>Jake goes above and beyond the brief to provide the best solution for clients' digital marketing needs.
+            Continually impressed, as a result we have some really stylish and importantly functional websites.</p>
+
+          <div class="icon text-primary text-center mb-5">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+        </div>
+
+        <div class="col-md-4 testimonial text-center">
+          <div class="avatar rounded-circle with-shadows mb-3 ml-auto mr-auto">
+            <img src="images/common/avatar-3.jpeg" class="w-100" alt="Testimonial Avatar" />
+          </div>
+          <h5 class="mb-1">Lio Tan</h5>
+          <span class="text-muted d-block mb-2">Managing Director</span>
+          <p>Rapid completion of 6 PLR e-book salesletters.
+              Very good quality work, fast delivery and communication.
+              This guy really knows how to "Sell in print"...
+          </p>
+
+          <div class="icon text-primary text-center mb-5">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / Testimonials Section -->
+
+  <!-- Our Blog Section -->
+
+  <!-- / Our Blog Section -->
+  <!-- Contact Section
+  <div class="contact section section-invert py-4">
+    <h3 class="section-title text-center m-5">Contact Us</h3>
+    <div class="container py-4">
+      <div class="row justify-content-md-center px-4">
+        <div class="contact-form col-sm-12 col-md-10 col-lg-7 p-4 mb-4 card">
+          <form>
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                  <label for="contactFormFullName">Full Name</label>
+                  <input type="email" class="form-control" id="contactFormFullName" placeholder="Enter your full name">
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                  <label for="contactFormEmail">Email address</label>
+                  <input type="email" class="form-control" id="contactFormEmail" placeholder="Enter your email address">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                  <label for="exampleInputMessage1">Message</label>
+                  <textarea id="exampleInputMessage1" class="form-control mb-4" rows="10" placeholder="Enter your message..." name="message"></textarea>
+                </div>
+              </div>
+            </div>
+            <input class="btn btn-primary btn-pill d-flex ml-auto mr-auto" type="submit" value="Send Your Message">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / Contact Section -->
+
+  <!-- Footer Section -->
+  <footer>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="images/logo-white.png" class="mr-3" alt="JB Consulting"><img src="images/lurn.png" class="mr-3" alt="JB Consulting"></a>
+        <div id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="privacy.html">Privacy Policy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cookie.html">Cookie Policy</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </footer>
+  <!-- / Footer Section -->
+
+  <!-- JavaScript Dependencies -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/14.2.1/smooth-scroll.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

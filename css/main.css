@@ -1,0 +1,270 @@
+/*====== Site Styling ======*/
+
+a {
+  color: #4b65b0;
+}
+
+a:hover {
+  color: #263156;
+}
+
+.branding .badge {
+  display: none !important;
+}
+
+.main {
+  margin-top:80px;
+}
+
+.navbar {
+  border-bottom: 1px solid #eaebed;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #4b65b0;
+}
+
+.navbar-brand img {
+  text-align: center;
+  width: 50px;
+}
+
+.clients img {
+  width: 100px;
+}
+
+.bg-light {
+  background-color: #fff !important;
+}
+
+.card-body {
+  padding: 1.875rem;
+  min-height: 350px;
+}
+
+.card-pricing .card-body {
+  padding: 1.875rem;
+  min-height: 280px;
+}
+
+.container {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.image-block {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.image-block img {
+  width: 600px;
+}
+
+.client-img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+.form-inline .form-control {
+  width: 180px;
+}
+
+.showcase .showcase-text {
+  padding: 3rem
+}
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover
+}
+
+@media (min-width:768px) {
+  .showcase .showcase-text {
+    padding: 7rem
+  }
+
+  .form-inline .form-control {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .image-block {
+    display: none;
+  }
+
+  .display-4 {
+    font-size: 2.4rem;
+  }
+
+  .form-inline .form-control {
+    width: 100%;
+  }
+
+  .d-table {
+    width:100%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1199px) {
+  .display-4 {
+    font-size: 2.5rem;
+  }
+
+  .form-inline .form-control {
+    width: 100%;
+  }
+}
+
+.btn-white:hover {
+  color: #111;
+  background-color: #eaeaea;
+  box-shadow: none;
+}
+
+.text-primary {
+  color: #4b65b0 !important;
+}
+
+.bg-primary {
+  background-color: #4b65b0 !important;
+}
+
+.section-title:after {
+  background-color: #4b65b0 !important;
+}
+
+.btn-primary {
+  color: #fff !important;
+  border-color: #4b65b0 !important;
+  background-color: #4b65b0 !important;
+}
+
+.btn-primary:hover {
+  color: #fff !important;
+  border-color: #263156 !important;
+  background-color: #263156 !important;
+}
+
+.form-group .col-lg-5,
+.form-group .col-lg-2 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.form-control:focus:hover {
+  border-color: #4b65b0 !important;
+}
+
+.icon img {
+  margin-bottom: 6px;
+  width: 60px
+}
+
+.card-pricing.popular {
+  z-index: 1;
+  border: 3px solid #4b65b0;
+}
+
+.card-pricing .list-unstyled li {
+  padding: .5rem 0;
+  color: #6c757d;
+}
+
+.fa, .fab {
+  font-weight: 400 !important;
+}
+
+.portfolio-logo {
+  width: 160px;
+}
+
+.feature .icon {
+  background: white;
+}
+
+.credit-cards {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0 0;
+  color: #C8C9C9;
+  font-size:10px;
+}
+
+.cc-icons {
+  display: inline;
+}
+
+.privacy-container {
+  width: 640px;
+}
+/*====== Ken Burns ========*/
+
+/* Loaded body */
+body.loaded {
+  opacity: 1;
+  transition: 1s opacity;
+}
+
+/* Default banner */
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 440px;
+  height: 20rem;
+  padding: 7% 0%;
+  margin-top: 80px;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+
+@media (max-width: 767px) {
+  .banner {
+    min-height: 260px;
+    height: 18rem;
+    padding: 6% 0%;
+  }
+}
+
+/* Default image container */
+.banner .background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transform: translate3d(0, 0, 0) scale(1.25);
+  background: #484b7a;
+    background: -moz-linear-gradient(-45deg, #1b1c24 0, #474a6d 100%);
+    background: -webkit-linear-gradient(-45deg, #1b1c24 0, #474a6d 100%);
+    background: linear-gradient(135deg, #1b1c24 0, #474a6d 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#484b7a', endColorstr='#7b80bc', GradientType=1);
+    height: 670px;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.banner .background:before {
+  position: absolute;
+  z-index: 0;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .8;
+  /*background: #777;*/
+}
+
+/* Loaded image container */
+.loaded .banner .background {
+  transform: scale(1);
+  transition: 8.5s transform;
+}

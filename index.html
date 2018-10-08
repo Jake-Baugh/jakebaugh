@@ -1,0 +1,623 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- CSS Dependencies -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/shards.min.css?version=2.1.0">
+  <link rel="stylesheet" href="css/shards-extras.min.css?version=2.1.0">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="https://js.stripe.com/v3/"></script>
+</head>
+
+<body>
+  <!-- Welcome Section -->
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-light bg-light fixed-top px-0">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo-alt.png" class="mr-2" alt="JB Consulting">
+
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Main</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#book">Consultation</a>
+          </li>
+       <!--   <li class="nav-item">
+            <a class="nav-link" href="development.html">Development</a>
+          </li> -->
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- / Navigation -->
+
+  <!-- Inner Wrapper -->
+  <header class="banner">
+    <span class="background"></span>
+    <div class="inner-wrapper mt-auto mb-auto container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="welcome-heading display-4 text-white">Develop a rich online presence</h1>
+          <p class="text-white">Launch &amp; conversion expert, specialising in helping entrepreneurs and start-ups make an impact and break through the noise. </p>
+          <a href="index.html#book" class="btn btn-lg btn-white btn-pill align-self-center">Book a call with me
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="image-block">
+      <img src="images/jake.png" alt="" class="img-fluid"></div>
+  </header>
+
+  <div class="subscribe section section-invert py-2">
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col-sm-6 col-xs-12">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 ml-auto mr-auto">
+              <h5>Get my FREE landing page optimisation guide</h5>
+              <p>Stress levels peaking at the amount you have run paid ads to landing pages that wipe your budget? <b>Join my email list</b> and get the conversion strategies that give you back time to spend doing what you love.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <div class="row">
+            <div class="col-12 ml-auto my-4">
+                <div id="mc_embed_signup">
+                    <form action="https://forovia.us12.list-manage.com/subscribe/post?u=ff30dea1f444a5c1a4af11088&amp;id=33672af18e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div class="row">
+                  <div class="form-inline d-table mx-auto">
+                    <div class="form-group">
+                      <div class="col-xs-12 col-lg-4  mb-2">
+                        <input type="text" class="form-control" id="form1-name" placeholder="Name" name="FNAME">
+                      </div>
+                      <div class="col-xs-12 col-lg-4 mb-2">
+                        <input type="email" class="form-control" id="mce-EMAIL" placeholder="Email" name="EMAIL">
+                      </div>
+                      <div class="col-xs-12 col-lg-4">
+                        <button class="btn btn-pill btn-primary mb-2" id="mc-embedded-subscribe" type="submit" style="width:130px !important" name="subscribe">Send
+                          It</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="subscribe-result">
+                    </div>
+              </form>
+              <script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+  <!-- Our Services Section -->
+  <div id="services" class="our-services section py-4">
+    <!-- Features -->
+    <div class="features py-5">
+      <div class="container">
+        <div class="row">
+          <div class="feature py-4 col-md-6 d-flex">
+            <div class="icon text-primary mr-3"><i class="fa fa-file-code"></i></div>
+            <div class="px-3">
+              <h5>Web Development</h5>
+              <p>Let's define your online presence! Walk away with sales optimised, <i>high converting</i> pages and
+                automation.
+              </p>
+            </div>
+          </div>
+          <div class="feature py-4 col-md-6 d-flex">
+            <div class="icon text-primary mr-3"><i class="fab fa-amazon"></i></div>
+            <div class="px-3">
+              <h5>Amazon FBA</h5>
+              <p>Appeal to <b>customer emotion</b> with enticing imagery and targeted keywords competitors do not even
+                know about.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="feature py-4 col-md-6 d-flex">
+            <div class="icon text-primary mr-3"><i class="fa fa-font"></i></div>
+            <div class="px-3">
+              <h5>Copywriting</h5>
+              <p>As much as I <b>love</b> intricate scripture, it just doesn't easily turn into cold hard cash. It's
+                time to write for results.
+              </p>
+            </div>
+          </div>
+          <div class="feature py-4 col-md-6 d-flex">
+            <div class="icon text-primary mr-3"><i class="fa fa-pen-nib"></i></div>
+            <div class="px-3">
+              <h5>Design & Branding</h5>
+              <p>A strong, iconic visual will propel you into space. Be <b>bold</b>, <i>unique</i> and even dare to be
+                a little brave with your style.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / Features -->
+  </div>
+  <!-- / Our Services Section -->
+
+  <div id="portfolio" class="section showcase">
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('images/visionary-item.jpg');"></div>
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+          <img src="images/visionary-logo.png" class="portfolio-logo mb-4 mr-2" alt="Visionary Clothing">
+          <p class="lead mb-0">Visionary set out to merge the clothing industry with night life aesthetics. I was able to help them achieve a sleek, youthful design, with a total revamp of the Visionary Clothing store theme.</p>
+          <a class="btn btn-primary btn-pill mt-4" href="https://www.visionarycph.com">Check It Out &rarr;</a>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6 text-white showcase-img" style="background-image: url('images/glindon-item.jpg');"></div>
+        <div class="col-lg-6 my-auto showcase-text">
+          <!--<h2>Glindon</h2>-->
+          <img src="images/glindon-logo.png" class="portfolio-logo mb-4 mr-2" alt="Glindon">
+          <p class="lead mb-0">Taken a new Amazon FBA brand to 5 figures per month. Managing creative delivery,
+            branding, product based graphic design, keyword and listing optimisation, PPC campaigns, social media
+            expansion.</p>
+          <a class="btn btn-primary btn-pill mt-4" href="http://www.glindon.co.uk">Check It Out &rarr;</a>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('images/jc-item.jpg');"></div>
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+          <h2>Jordan Carter</h2>
+          <p class="lead mb-0">Working exclusively with an 8 figure marketing genius to increase his lead conversion
+            and automation through building email sequences, lead capture pages and sales funnels.</p>
+          <a class="btn btn-primary btn-pill mt-4" href="https://www.jordancarter.co.uk/last-call/">Check It Out &rarr;</a>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6 text-white showcase-img" style="background-image: url('images/elemental-item.jpg');"></div>
+        <div class="col-lg-6 my-auto showcase-text">
+          <!--<h2>Elemental</h2>-->
+          <img src="images/elemental-logo.svg" class="portfolio-logo mb-3 mr-2" alt="WeAreElemental">
+          <p class="lead mb-0">Unique site build and design for a UK based digital marketing agency, offering the
+            ability to update blogs news and case studies.</p>
+          <a class="btn btn-primary btn-pill mt-4" href="https://www.weareelemental.uk">Check It Out &rarr;</a>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('images/medilogik-item.jpg');"></div>
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+          <!--<h2>Medilogik</h2>-->
+          <img src="images/medilogik-logo.png" class="portfolio-logo mb-4 mr-2" alt="Medilogik EMS">
+          <p class="lead mb-0">Developed the front facing site for Medilogik EMS, a clean rebrand and responsive
+            website built to help gain more clients.</p>
+          <a class="btn btn-primary btn-pill mt-4" href="https://www.medilogik.com">Check It Out &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="clients section mx-auto py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-md-2 text-center my-4">
+          <img class="client-img my-4" src="images/rollsroyce-logo.png" />
+        </div>
+        <div class="col-6 col-md-2 text-center my-4">
+          <img class="client-img my-3" src="images/uwe-logo.png" />
+        </div>
+        <div class="col-6 col-md-2 text-center my-4">
+          <img class="client-img my-3" src="images/visionary-logo.png" />
+        </div>
+        <div class="col-6 col-md-2 text-center my-4">
+          <img class="client-img my-4" src="images/cwa-logo.png" />
+        </div>
+        <div class="col-6 col-md-2 text-center my-4">
+          <img class="client-img my-3" src="images/elemental-logo.svg" />
+        </div>
+        <div class="col-6 col-md-2 text-center my-4">
+          <img class="client-img my-4" src="images/medilogik-logo.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonials Section -->
+  <div id="testimonials" class="testimonials section section-invert py-4">
+    <h3 class="section-title text-center m-5">Testimonials</h3>
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-4 testimonial text-center">
+          <div class="avatar rounded-circle with-shadows mb-3 ml-auto mr-auto">
+            <img src="images/common/avatar-1.jpeg" class="w-100" alt="Testimonial Avatar" />
+          </div>
+          <h5 class="mb-1">Jordan Carter</h5>
+          <span class="text-muted d-block mb-2">Entrepreneur</span>
+          <p>Somehow this guy can spend like 30 minutes tweaking my landing pages and end up boosting conversion rates
+            by around 12% wtf??!!
+          </p>
+
+          <div class="icon text-primary text-center mb-5">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+        </div>
+
+        <div class="col-md-4 testimonial text-center">
+          <div class="avatar rounded-circle with-shadows mb-3 ml-auto mr-auto">
+            <img src="images/common/avatar-2.jpeg" class="w-100" alt="Testimonial Avatar" />
+          </div>
+          <h5 class="mb-1">Chris Marsom</h5>
+          <span class="text-muted d-block mb-2">Marketing Manager</span>
+          <p>Jake goes above and beyond the brief to provide the best solution for clients' digital marketing needs.
+            Continually impressed, as a result we have some really stylish and importantly functional websites.</p>
+
+          <div class="icon text-primary text-center mb-5">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+        </div>
+
+        <div class="col-md-4 testimonial text-center">
+          <div class="avatar rounded-circle with-shadows mb-3 ml-auto mr-auto">
+            <img src="images/common/avatar-3.jpeg" class="w-100" alt="Testimonial Avatar" />
+          </div>
+          <h5 class="mb-1">Lio Tan</h5>
+          <span class="text-muted d-block mb-2">Managing Director</span>
+          <p>Rapid completion of 6 PLR e-book salesletters.
+              Very good quality work, fast delivery and communication.
+              This guy really knows how to "Sell in print"...
+          </p>
+
+          <div class="icon text-primary text-center mb-5">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / Testimonials Section -->
+
+  <div class="book section section py-4" id="book">
+    <!-- Calendly inline widget begin -->
+    <h3 class="section-title text-center m-5">Book a call with me
+    </h3>
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <div class="book card-deck flex-column flex-md-row mb-3 h-100">
+            <div class="card card-pricing text-center px-3 mb-4">
+              <div class="card-body">
+                  <div class="features text-left py-5">
+                      <div class="container">
+                        <div class="row h-100">
+                          <div class="feature py-4 col-12 col-md-6 d-flex ">
+                            <div class="icon text-primary mr-3"><i class="fa fa-search"></i></div>
+                            <div class="px-3">
+                              <p>Review your landing page and optimise for maximum sales.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="feature py-4 col-12 col-md-6 d-flex">
+                            <div class="icon text-primary mr-3"><i class="fa fa-drafting-compass"></i></div>
+                            <div class="px-3">
+                              <p>Identify whether your business could benefit from a code overhaul.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="feature py-4 col-12 col-md-6 d-flex">
+                            <div class="icon text-primary mr-3"><i class="fa fa-font"></i></div>
+                            <div class="px-3">
+                              <p>Need email templates? Advice on writing badass headlines?
+                              </p>
+                            </div>
+                          </div>
+                          <div class="feature py-4 col-12 col-md-6 d-flex">
+                            <div class="icon text-primary mr-3"><i class="fa fa-chart-line"></i></div>
+                            <div class="px-3">
+                              <p>Work together to accelerate conversion rates to 11% or higher!
+                              </p>
+                            </div>
+                          </div>
+                         </div>
+                
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="book card-deck flex-column flex-md-row mb-3 h-100">
+            <div class="card card-pricing text-center px-3 mb-4">
+              <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Consultation</span>
+              <div class="bg-transparent card-header pt-4 border-0">
+                <h1 class="h1 font-weight-normal text-primary text-center mb-0" data-pricing-value="30">£<span class="price">30</span></h1>
+              </div>
+              <div class="card-body pt-0">
+                <ul class="list-unstyled mb-4">
+                  <li>45 minute consultation</li>
+                  <li>Website audit</li>
+                  <li>Technical review </li>
+                  <li>Digital copywriting </li>
+                  <li>Launch strategy</li>
+                </ul>
+                <a target="_blank" class="btn btn-pill btn-primary mb-3" data-toggle="modal" data-price="30"
+                  data-target="#paymentModal">Book
+                  Now
+                </a>
+
+                <ul class="credit-cards">
+                    <li class="cc-icons"><i class="fab fa-cc-visa fa-2x"></i></li>
+                    <li class="cc-icons"><i class="fab fa-cc-mastercard fa-2x"></i></li>
+                    <li class="cc-icons"><i class="fab fa-cc-amex fa-2x"></i></li>
+                    <li class="cc-icons"><i class="fab fa-cc-discover fa-2x"></i></li>
+                    <li class="cc-icons"><i class="fab fa-cc-jcb fa-2x"></i></li>
+                    <li class="cc-icons"><i class="fab fa-cc-diners-club fa-2x"></i></li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="paymentModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="paymentModal">Payment Options</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <article class="card">
+          <div class="card-body">
+
+            <ul class="nav bg-light nav-pills rounded nav-fill mb-3" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#nav-tab-card" data-scroll-ignore>
+                  <i class="fa fa-credit-card"></i> Credit Card</a></li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#nav-tab-paypal" data-scroll-ignore>
+                  <i class="fab fa-paypal"></i> Paypal</a></li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#nav-tab-bank" data-scroll-ignore>
+                  <i class="fa fa-university"></i> Bank Transfer</a></li>
+            </ul>
+
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="nav-tab-card">
+                <p class="d-none alert alert-success">Some text success or error</p>
+                <form role="form">
+                  <!-- Name On Card
+                   
+                   <div class="form-group">
+                   <label for="username">Full name (on the card)</label>
+                   <input type="text" class="form-control" placeholder="Full Name" name="username" placeholder="" required="">
+                 </div> -->
+                  <!-- form-group.// -->
+
+                  <div class="form-group">
+                    <label for="cardNumber">Card number</label>
+                    <div class="input-group">
+                      <div class="form-control" id="cardNumber"></div>
+                      <div class="input-group-append">
+                        <span class="input-group-text text-muted">
+                          <i class="fab fa-cc-visa"></i>   <i class="fab fa-cc-amex"></i>
+                          <i class="fab fa-cc-mastercard"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div> <!-- form-group.// -->
+
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <div class="form-group">
+                        <label><span class="hidden-xs">Expiration</span> </label>
+                        <div class="input-group">
+                          <div class="form-control" id="cardExpiry"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label data-toggle="tooltip" title="" data-original-title="3 digits code on back side of the card">CVC
+                          <i class="fa fa-question-circle"></i></label>
+                        <div class="form-control" id="cardCVC"></div>
+                      </div> <!-- form-group.// -->
+                    </div>
+                  </div> <!-- row.// -->
+                  <div class="form-group">
+                    <label><span class="hidden-xs">Amount</span> </label>
+                    <div class="input-group">
+                      <div class="input-group-prepend"><span class="input-group-text">$</span></div>
+                      <input type="text" class="form-control text-right" id="modalPrice" placeholder="0" disabled>
+                      <div class="input-group-append"><span class="input-group-text">.00</span></div>
+                    </div>
+                  </div>
+                  <button id="paymentSubmit" data-amount="45" class="subscribe btn btn-primary btn-block" type="button"> Confirm </button>
+                  <div class="text-center mt-3">
+                    <small><i class="fa fa-lock"></i> Secured with 256-bit encryption</small>
+                  </div>
+                </form>
+              </div> <!-- tab-pane.// -->
+              <div class="tab-pane fade" id="nav-tab-paypal">
+                <p>Paypal is the easiest way to pay online</p>
+                <p>
+                  
+                  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="NKNBNTTPJBLXC">
+                    <button name="submit" class="btn btn-primary"> <i class="fab fa-paypal"></i> Pay via Paypal
+                    </button>
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </p>
+                <!--<p><strong>Note:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor
+                  incididunt ut labore et dolore magna aliqua. </p>-->
+              </div>
+              <div class="tab-pane fade" id="nav-tab-bank">
+                <p>Bank account details</p>
+                <dl class="param">
+                  <dt>BANK: </dt>
+                  <dd>LLOYDS BANK</dd>
+                </dl>
+                <dl class="param">
+                  <dt>Account number: </dt>
+                  <dd>34348860</dd>
+                </dl>
+                <dl class="param">
+                  <dt>IBAN: </dt>
+                  <dd>GB68LOYD30667734348860</dd>
+                </dl>
+                <dl class="param">
+                    <dt>BIC: </dt>
+                    <dd>LOYDGB21694</dd>
+                  </dl>
+                <dl class="param">
+                    <dt>PAYMENT REFERENCE: </dt>
+                    <dd>CONSULTING</dd>
+                  </dl>
+                <!--<p><strong>Note:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor
+                  incididunt ut labore et dolore magna aliqua. </p>-->
+              </div> <!-- tab-pane.// -->
+            </div> <!-- tab-content .// -->
+
+          </div> <!-- card-body.// -->
+        </article> <!-- card.// -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Our Blog Section -->
+
+  <!-- / Our Blog Section -->
+  <!-- Contact Section
+  <div class="contact section section-invert py-4">
+    <h3 class="section-title text-center m-5">Contact Us</h3>
+    <div class="container py-4">
+      <div class="row justify-content-md-center px-4">
+        <div class="contact-form col-sm-12 col-md-10 col-lg-7 p-4 mb-4 card">
+          <form>
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                  <label for="contactFormFullName">Full Name</label>
+                  <input type="email" class="form-control" id="contactFormFullName" placeholder="Enter your full name">
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                  <label for="contactFormEmail">Email address</label>
+                  <input type="email" class="form-control" id="contactFormEmail" placeholder="Enter your email address">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                  <label for="exampleInputMessage1">Message</label>
+                  <textarea id="exampleInputMessage1" class="form-control mb-4" rows="10" placeholder="Enter your message..." name="message"></textarea>
+                </div>
+              </div>
+            </div>
+            <input class="btn btn-primary btn-pill d-flex ml-auto mr-auto" type="submit" value="Send Your Message">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / Contact Section -->
+
+  <!-- Footer Section -->
+  <footer>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="images/logo-white.png" class="mr-3" alt="JB Consulting"><img src="images/lurn.png" class="mr-3" alt="JB Consulting"></a>
+        <div id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="privacy.html">Privacy Policy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cookie.html">Cookie Policy</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </footer>
+  <!-- / Footer Section -->
+
+  <!-- JavaScript Dependencies -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/14.2.1/smooth-scroll.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
